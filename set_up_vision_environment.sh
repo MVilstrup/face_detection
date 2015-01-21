@@ -37,5 +37,5 @@ sudo apt-get install python-pip python-scipy -y
 pip install mahotas
 
 # Make sure you can open images and videos on your local computer
-sudo apt-get install vlc -y
+sudo apt-get install shotwell vlc -y
 
