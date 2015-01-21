@@ -1,10 +1,4 @@
 This is a simple repository for getting started working with computer vision easily. 
 
-Note: 
-if you are working with mac you will need to install:
-
-VLC:
-
-
-XQUARTZ:
+To be able to show images and video on a mac, you might want to install XQUARTZ:
 http://xquartz.macosforge.org/landing/
