@@ -14,7 +14,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Shell script provisioning
   config.vm.provision "shell", path: "set_up_vision_environment.sh"
-  config.vm.provision "shell", path: "setup_rest.sh"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
