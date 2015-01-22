@@ -1,10 +1,12 @@
-import numpy as np
 import argparse
-from utils import imutils
+
 import cv2
 
+from utils import imutils
+
+
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", required = True, help="Path to the image")
+ap.add_argument("-i", "--image", required=True, help="Path to the image")
 args = vars(ap.parse_args())
 
 image = cv2.imread(args["image"])
@@ -12,7 +14,7 @@ cv2.imshow("Original", image)
 
 # Showcase of the manual way of rotation an image
 
-(height, width) = image.shape[:2] # get the two first values of the image which is height and width
+(height, width) = image.shape[:2]  # get the two first values of the image which is height and width
 center = (width / 2, height / 2)
 
 matrix = cv2.getRotationMatrix2D(center, 45, 1.0)

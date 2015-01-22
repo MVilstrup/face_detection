@@ -1,7 +1,8 @@
-import numpy as np
 import argparse
-from utils import imutils
+
+import numpy as np
 import cv2
+
 
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True, help="Path to the image")
@@ -18,12 +19,12 @@ print "min of 0: %s" % str(cv2.subtract(np.uint8([50]), np.uint8([100])))
 print "Wrap around %s" % str(np.uint8([200]) + np.uint8([100]))
 print "Wrap around %s" % str(np.uint8([50]) - np.uint8([100]))
 
-matrix = np.ones(image.shape, dtype="uint8") * 100 # Create a matrix with the dimensions of image, and 100 in each slot
-added = cv2.add(image, matrix) # Add 100 to all pixel values
+matrix = np.ones(image.shape, dtype="uint8") * 100  # Create a matrix with the dimensions of image, and 100 in each slot
+added = cv2.add(image, matrix)  # Add 100 to all pixel values
 cv2.imshow("Added", added)
 
-matrix = np.ones(image.shape, dtype="uint8") * 50 # Create a matrix with the dimensions of image, and 50 in each slot
-subtracted = cv2.subtract(image, matrix) # Subtract 50 from all pixel values
+matrix = np.ones(image.shape, dtype="uint8") * 50  # Create a matrix with the dimensions of image, and 50 in each slot
+subtracted = cv2.subtract(image, matrix)  # Subtract 50 from all pixel values
 cv2.imshow("Subratcted", subtracted)
 
 cv2.waitKey(0)
