@@ -18,7 +18,7 @@ cv2.imshow("OR", bitwise_or)
 bitwise_xor = cv2.bitwise_xor(rectangle, circle) # Pixels in the same position greater than 0 in either image but not both
 cv2.imshow("XOR", bitwise_xor)
 
-bitwise_not = cv2.bitwise_not(rectangle, circle) # A bitwise NOT inverts the on and off pixels in an image.
+bitwise_not = cv2.bitwise_not(rectangle) # A bitwise NOT inverts the on and off pixels in an image.
 cv2.imshow("NOT", bitwise_not)
 
 cv2.waitKey(0)
