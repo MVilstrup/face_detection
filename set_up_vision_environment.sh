@@ -34,7 +34,8 @@ sudo apt-get gedit -y
 
 # Install the final libraries for working with images in python 
 sudo apt-get install python-pip python-scipy -y
-pip install mahotas
+sudo easy_install -U distribute
+pip install mahotas matplotlib
 
 # Make sure you can open images and videos on your local computer
 sudo apt-get install shotwell vlc -y
