@@ -3,7 +3,7 @@
 # Setup the system and install the most necessary libraries
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install gcc g++ gettext unzip make cmake checkinstall libicu48 -y
+sudo apt-get install gcc g++ gedit gettext unzip make cmake checkinstall libicu48 -y
 
 # Install OpenCV
 version="2.4.9"
@@ -30,13 +30,11 @@ sudo sh -c 'echo "PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig \n e
 
 echo "OpenCV" $version "ready to be used"
 
-sudo apt-get gedit -y
-
 # Install the final libraries for working with images in python 
 sudo apt-get install python-pip python-scipy -y
 sudo easy_install -U distribute
-pip install mahotas matplotlib
+sudo pip install six mahotas matplotlib scikit-learn scikit-image
 
 # Make sure you can open images and videos on your local computer
-sudo apt-get install shotwell vlc -y
+
 
